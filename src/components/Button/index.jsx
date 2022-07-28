@@ -1,1 +1,2 @@
-export const Button = styled.button``;
+export { Button } from "./style";
+

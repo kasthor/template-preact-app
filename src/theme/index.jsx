@@ -6,6 +6,12 @@ const baseTheme = {
   scent: "#00ffff",
   white: "#fff",
   black: "#000",
+  small: "0.8em",
+  text: "1em",
+  heading1: "3em",
+  heading2: "2.5em",
+  heading3: "2em",
+  heading4: "1.5em",
 };
 
 const buildTheme = (t) => Object.assign(t, { primary50: "#880000" });
@@ -53,6 +59,12 @@ const reset = css`
   }
 `;
 
+const font = createGlobalStyle`
+body {
+  font-family: 'Gotham', sans-serif;
+}
+`;
 export const GlobalStyle = createGlobalStyle`
   ${reset}
+  ${font}
 `;
